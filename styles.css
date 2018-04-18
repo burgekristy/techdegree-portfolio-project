@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 3;
 }
 .nav {
   display: flex;
@@ -75,7 +76,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -87,8 +88,12 @@ header .profile-image:hover {
 }
 .location {
   background-color: #222;
-  color: yellow;
+  color: pink;
 }
+.experience, .hobbies {
+  margin-top: 13%;
+}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -102,7 +107,9 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
-
+.project-title {
+  text-align: center;
+}
 ul.skills {
   padding: 0;
   text-align: center;
