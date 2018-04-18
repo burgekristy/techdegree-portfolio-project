@@ -72,12 +72,14 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px double #565656;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(360deg);
+  border-style: solid;
+  transform: scale(1.15) rotate(360deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -88,7 +90,7 @@ header .profile-image:hover {
 }
 .location {
   background-color: #222;
-  color: pink;
+  color: skyblue;
 }
 .experience, .hobbies {
   margin-top: 13%;
@@ -118,14 +120,20 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: orangered;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #092044;
+}
+
+ul.places {
+    width: 33%;
+    margin: 0 auto;
+    list-style-type: circle;
 }
 
 .my-hobbies {
@@ -151,6 +159,8 @@ ul.skills {
 }
 
 .dog-image:hover {
+  border: 8px solid #cdcdcd;
+  border-radius: 0%;
   transform: scale(1) rotate(90deg);
 }
 
